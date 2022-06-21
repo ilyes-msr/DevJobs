@@ -22,10 +22,10 @@ Route::put('/listings/{listing}', [ListingController::class, 'update'])->middlew
 Route::delete('/listings/{listing}',  [ListingController::class, 'destroy'])->middleware('auth');
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
-Route::get('/register', [UserController::class, 'create']);
+Route::get('/register', [UserController::class, 'create'])->middleware('guest');
 Route::post('/users', [UserController::class, 'store']);
 Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
-Route::get('/login', [UserController::class, 'login'])->name('login');
+Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
 /*
 Route::get('/hello', function () {
