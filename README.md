@@ -10,3 +10,6 @@ DevJobs is a job listings application built with Laravel 9 and MySQL and Tailwin
 
 
 ![2](https://user-images.githubusercontent.com/74922512/177163383-353461c1-5376-4d54-b6c4-6dc8203547d5.PNG)
+
+
+![3](https://user-images.githubusercontent.com/74922512/177164233-55f91baf-7dec-4a88-8654-f582f8e7f02b.PNG)
